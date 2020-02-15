@@ -23,11 +23,6 @@ function buildAuthorizationHeader($oauth)
 
 $url = "https://api.twitter.com/1.1/search/tweets.json";
 
-$oauth_access_token = "161296623-7sNYsRR8oUG433CVuYUViEbkfBCyGhwKjUw0K78U";
-$oauth_access_token_secret = "66tK3mkOAOAf4JnFjRhLUzZ8OxFEjMPGe5IMKYNMGd0sg";
-$consumer_key = "yFrkkRkuu0w1VguMoy93yAEAj";
-$consumer_secret = "8vstCt1REzhmCMtsM4dxmeJhNZHPmEWFgn3mMHWf5m8pNcxlK6";
-
 $oauth = array(
     'q' => 'XFL2020',
     'count' => 4,
