@@ -6,7 +6,7 @@ use Dotenv\Dotenv;
 use Carbon\Carbon;
 
 $httpStatus = 200;
-header('Access-Control-Allow-Origin: http://localhost:3000');
+header('Access-Control-Allow-Origin: *');
 header('Content-type:application/json;charset=utf-8');
 header('Status: ' . $httpStatus);
 
