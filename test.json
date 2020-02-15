@@ -1,0 +1,389 @@
+(
+    [statuses] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [created_at] => Sat Feb 08 22:41:04 +0000 2020
+                    [id] => 1226274775661776898
+                    [id_str] => 1226274775661776898
+                    [text] => No!No!No! hair does not look good!😂#orangeface  #VindictiveDictatorTrump
+#MittRomneyIsMyHero 🇺🇸#VindmanIsAHero🇺🇸 https://t.co/psU0oWgH9C
+                    [truncated] =>
+                    [entities] => stdClass Object
+                        (
+                            [hashtags] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [text] => orangeface
+                                            [indices] => Array
+                                                (
+                                                    [0] => 35
+                                                    [1] => 46
+                                                )
+
+                                        )
+
+                                    [1] => stdClass Object
+                                        (
+                                            [text] => VindictiveDictatorTrump
+                                            [indices] => Array
+                                                (
+                                                    [0] => 48
+                                                    [1] => 72
+                                                )
+
+                                        )
+
+                                    [2] => stdClass Object
+                                        (
+                                            [text] => MittRomneyIsMyHero
+                                            [indices] => Array
+                                                (
+                                                    [0] => 74
+                                                    [1] => 93
+                                                )
+
+                                        )
+
+                                    [3] => stdClass Object
+                                        (
+                                            [text] => VindmanIsAHero
+                                            [indices] => Array
+                                                (
+                                                    [0] => 96
+                                                    [1] => 111
+                                                )
+
+                                        )
+
+                                )
+
+                            [symbols] => Array
+                                (
+                                )
+
+                            [user_mentions] => Array
+                                (
+                                )
+
+                            [urls] => Array
+                                (
+                                    [0] => stdClass Object
+                                        (
+                                            [url] => https://t.co/psU0oWgH9C
+                                            [expanded_url] => https://twitter.com/AynRandPaulRyan/status/1226233433900240896
+                                            [display_url] => twitter.com/AynRandPaulRya…
+                                            [indices] => Array
+                                                (
+                                                    [0] => 114
+                                                    [1] => 137
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [metadata] => stdClass Object
+                        (
+                            [iso_language_code] => en
+                            [result_type] => recent
+                        )
+
+                    [source] => <a href="https://mobile.twitter.com" rel="nofollow">Twitter Web App</a>
+                    [in_reply_to_status_id] =>
+                    [in_reply_to_status_id_str] =>
+                    [in_reply_to_user_id] =>
+                    [in_reply_to_user_id_str] =>
+                    [in_reply_to_screen_name] =>
+                    [user] => stdClass Object
+                        (
+                            [id] => 1198018607013384194
+                            [id_str] => 1198018607013384194
+                            [name] => RobinTweety
+                            [screen_name] => robin14799784
+                            [location] => Michigan
+                            [description] => FORMER Republican Voter. REAL Republicans don't cage children, take food away, Assassinate, take Disability from the Disabled & LET Russia in our front door!
+                            [url] =>
+                            [entities] => stdClass Object
+                                (
+                                    [description] => stdClass Object
+                                        (
+                                            [urls] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [protected] =>
+                            [followers_count] => 87
+                            [friends_count] => 288
+                            [listed_count] => 0
+                            [created_at] => Fri Nov 22 23:22:06 +0000 2019
+                            [favourites_count] => 3067
+                            [utc_offset] =>
+                            [time_zone] =>
+                            [geo_enabled] =>
+                            [verified] =>
+                            [statuses_count] => 5346
+                            [lang] =>
+                            [contributors_enabled] =>
+                            [is_translator] =>
+                            [is_translation_enabled] =>
+                            [profile_background_color] => F5F8FA
+                            [profile_background_image_url] =>
+                            [profile_background_image_url_https] =>
+                            [profile_background_tile] =>
+                            [profile_image_url] => http://pbs.twimg.com/profile_images/1198386743663374341/aHPtDg83_normal.jpg
+                            [profile_image_url_https] => https://pbs.twimg.com/profile_images/1198386743663374341/aHPtDg83_normal.jpg
+                            [profile_link_color] => 1DA1F2
+                            [profile_sidebar_border_color] => C0DEED
+                            [profile_sidebar_fill_color] => DDEEF6
+                            [profile_text_color] => 333333
+                            [profile_use_background_image] => 1
+                            [has_extended_profile] => 1
+                            [default_profile] => 1
+                            [default_profile_image] =>
+                            [following] =>
+                            [follow_request_sent] =>
+                            [notifications] =>
+                            [translator_type] => none
+                        )
+
+                    [geo] =>
+                    [coordinates] =>
+                    [place] =>
+                    [contributors] =>
+                    [is_quote_status] => 1
+                    [quoted_status_id] => 1226233433900240896
+                    [quoted_status_id_str] => 1226233433900240896
+                    [quoted_status] => stdClass Object
+                        (
+                            [created_at] => Sat Feb 08 19:56:47 +0000 2020
+                            [id] => 1226233433900240896
+                            [id_str] => 1226233433900240896
+                            [text] => @realDonaldTrump Imagine being this thin-skinned.
+#orangeface #VindictiveDictatorTrump #saturdaymorning #amjoy… https://t.co/mHF4bbDUxO
+                            [truncated] => 1
+                            [entities] => stdClass Object
+                                (
+                                    [hashtags] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [text] => orangeface
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 50
+                                                            [1] => 61
+                                                        )
+
+                                                )
+
+                                            [1] => stdClass Object
+                                                (
+                                                    [text] => VindictiveDictatorTrump
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 62
+                                                            [1] => 86
+                                                        )
+
+                                                )
+
+                                            [2] => stdClass Object
+                                                (
+                                                    [text] => saturdaymorning
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 87
+                                                            [1] => 103
+                                                        )
+
+                                                )
+
+                                            [3] => stdClass Object
+                                                (
+                                                    [text] => amjoy
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 104
+                                                            [1] => 110
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [symbols] => Array
+                                        (
+                                        )
+
+                                    [user_mentions] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [screen_name] => realDonaldTrump
+                                                    [name] => Donald J. Trump
+                                                    [id] => 25073877
+                                                    [id_str] => 25073877
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 0
+                                                            [1] => 16
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [urls] => Array
+                                        (
+                                            [0] => stdClass Object
+                                                (
+                                                    [url] => https://t.co/mHF4bbDUxO
+                                                    [expanded_url] => https://twitter.com/i/web/status/1226233433900240896
+                                                    [display_url] => twitter.com/i/web/status/1…
+                                                    [indices] => Array
+                                                        (
+                                                            [0] => 112
+                                                            [1] => 135
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                            [metadata] => stdClass Object
+                                (
+                                    [iso_language_code] => en
+                                    [result_type] => recent
+                                )
+
+                            [source] => <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+                            [in_reply_to_status_id] => 1226222654019035142
+                            [in_reply_to_status_id_str] => 1226222654019035142
+                            [in_reply_to_user_id] => 25073877
+                            [in_reply_to_user_id_str] => 25073877
+                            [in_reply_to_screen_name] => realDonaldTrump
+                            [user] => stdClass Object
+                                (
+                                    [id] => 755835576
+                                    [id_str] => 755835576
+                                    [name] => Holly Figueroa O'Reilly
+                                    [screen_name] => AynRandPaulRyan
+                                    [location] => I rarely read private DM’s. Contact: Phone/Text/Whatsapp/Signal/Telegram: (240) 844-2514, Email: bwcs2020@protonmail.com
+                                    [description] => Op-eds @washingtonpost @guardian│Founder @bluewavecs│Host #ADPPodcast│Grammy-losing songwriter│Sued Trump and won│I have 5 kids│You can't scare me
+                                    [url] => https://t.co/pLJ4OR0L8p
+                                    [entities] => stdClass Object
+                                        (
+                                            [url] => stdClass Object
+                                                (
+                                                    [urls] => Array
+                                                        (
+                                                            [0] => stdClass Object
+                                                                (
+                                                                    [url] => https://t.co/pLJ4OR0L8p
+                                                                    [expanded_url] => https://www.patreon.com/anotherdamnpoliticspodcast
+                                                                    [display_url] => patreon.com/anotherdamnpol…
+                                                                    [indices] => Array
+                                                                        (
+                                                                            [0] => 0
+                                                                            [1] => 23
+                                                                        )
+
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [description] => stdClass Object
+                                                (
+                                                    [urls] => Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [protected] =>
+                                    [followers_count] => 237049
+                                    [friends_count] => 5712
+                                    [listed_count] => 1709
+                                    [created_at] => Mon Aug 13 21:09:18 +0000 2012
+                                    [favourites_count] => 193319
+                                    [utc_offset] =>
+                                    [time_zone] =>
+                                    [geo_enabled] =>
+                                    [verified] => 1
+                                    [statuses_count] => 75286
+                                    [lang] =>
+                                    [contributors_enabled] =>
+                                    [is_translator] =>
+                                    [is_translation_enabled] =>
+                                    [profile_background_color] => 000000
+                                    [profile_background_image_url] => http://abs.twimg.com/images/themes/theme6/bg.gif
+                                    [profile_background_image_url_https] => https://abs.twimg.com/images/themes/theme6/bg.gif
+                                    [profile_background_tile] =>
+                                    [profile_image_url] => http://pbs.twimg.com/profile_images/1163918849923698688/u4Pp4EMY_normal.png
+                                    [profile_image_url_https] => https://pbs.twimg.com/profile_images/1163918849923698688/u4Pp4EMY_normal.png
+                                    [profile_banner_url] => https://pbs.twimg.com/profile_banners/755835576/1576849996
+                                    [profile_link_color] => FF691F
+                                    [profile_sidebar_border_color] => 000000
+                                    [profile_sidebar_fill_color] => 000000
+                                    [profile_text_color] => 000000
+                                    [profile_use_background_image] =>
+                                    [has_extended_profile] => 1
+                                    [default_profile] =>
+                                    [default_profile_image] =>
+                                    [following] =>
+                                    [follow_request_sent] =>
+                                    [notifications] =>
+                                    [translator_type] => none
+                                )
+
+                            [geo] =>
+                            [coordinates] =>
+                            [place] =>
+                            [contributors] =>
+                            [is_quote_status] => 1
+                            [quoted_status_id] => 1226222654019035142
+                            [quoted_status_id_str] => 1226222654019035142
+                            [retweet_count] => 245
+                            [favorite_count] => 1412
+                            [favorited] =>
+                            [retweeted] =>
+                            [possibly_sensitive] =>
+                            [lang] => en
+                        )
+
+                    [retweet_count] => 0
+                    [favorite_count] => 1
+                    [favorited] =>
+                    [retweeted] =>
+                    [possibly_sensitive] =>
+                    [lang] => en
+                )
+
+        )
+
+    [search_metadata] => stdClass Object
+        (
+            [completed_in] => 0.027
+            [max_id] => 1226274775661776898
+            [max_id_str] => 1226274775661776898
+            [next_results] => ?max_id=1226274775661776897&q=MittRomneyIsMyHero&count=2&include_entities=1
+            [query] => MittRomneyIsMyHero
+            [refresh_url] => ?since_id=1226274775661776898&q=MittRomneyIsMyHero&include_entities=1
+            [count] => 2
+            [since_id] => 0
+            [since_id_str] => 0
+        )
