@@ -26,7 +26,7 @@ $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
 
 $oauth = array(
     'screen_name' => 'HistoryCalendar',
-    'count' => 7,
+    'count' => 1,
     'oauth_consumer_key' => $consumer_key,
     'oauth_nonce' => time(),
     'oauth_signature_method' => 'HMAC-SHA1',
@@ -46,7 +46,7 @@ $header = array(buildAuthorizationHeader($oauth), 'Expect:');
 $options = array(
     CURLOPT_HTTPHEADER => $header,
     CURLOPT_HEADER => false,
-    CURLOPT_URL => $url . '?screen_name=HistoryCalendar&count=7',
+    CURLOPT_URL => $url . '?screen_name=HistoryCalendar&count=1',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_SSL_VERIFYPEER => false
 );

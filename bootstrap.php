@@ -22,3 +22,5 @@ $consumer_secret = $_ENV['CONSUMER_SECRET'];
 $wBitKey = $_ENV['WEATHERBIT_KEY'];
 $wBitKey = $_ENV['WEATHERBIT_KEY'];
 $calendarId = $_ENV['CALENDAR_ID'];
+$quoteId = $_ENV['QUOTE_ID'];
+$quoteToken = $_ENV['QUOTE_TOKEN'];

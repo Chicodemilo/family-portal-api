@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/bootstrap.php';
 
+use Carbon\Carbon;
+
 function buildBaseString($baseURI, $method, $params)
 {
     $r = array();
@@ -24,7 +26,7 @@ function buildAuthorizationHeader($oauth)
 $url = "https://api.twitter.com/1.1/search/tweets.json";
 
 $oauth = array(
-    'q' => 'XFL2020',
+    'q' => 'QZZXXWEE42',
     'count' => 4,
     'oauth_consumer_key' => $consumer_key,
     'oauth_nonce' => time(),
@@ -46,7 +48,7 @@ $header = array(buildAuthorizationHeader($oauth), 'Expect:');
 $options = array(
     CURLOPT_HTTPHEADER => $header,
     CURLOPT_HEADER => false,
-    CURLOPT_URL => $url . '?q=XFL2020&count=4',
+    CURLOPT_URL => $url . '?q=QZZXXWEE42&count=4',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_SSL_VERIFYPEER => false
 );
@@ -61,7 +63,9 @@ $twitter_data = json_decode($json);
 $tweets = [];
 
 foreach ($twitter_data->statuses as $tweet) {
-    $tweets[] = ['summary' => $tweet->text, 'date' => $tweet->created_at];
+    $formatDate = new Carbon($tweet->created_at);
+    $formatDate->setTimezone('America/Chicago');
+    $tweets[] = ['summary' => $tweet->text, 'date' => $formatDate->format('n/j/y g:ia')];
 }
 
 echo json_encode($tweets);
