@@ -27,7 +27,7 @@ $url = "https://api.twitter.com/1.1/search/tweets.json";
 
 $oauth = array(
     'q' => 'QZZXXWEE42',
-    'count' => 4,
+    'count' => 5,
     'oauth_consumer_key' => $consumer_key,
     'oauth_nonce' => time(),
     'oauth_signature_method' => 'HMAC-SHA1',
@@ -48,7 +48,7 @@ $header = array(buildAuthorizationHeader($oauth), 'Expect:');
 $options = array(
     CURLOPT_HTTPHEADER => $header,
     CURLOPT_HEADER => false,
-    CURLOPT_URL => $url . '?q=QZZXXWEE42&count=4',
+    CURLOPT_URL => $url . '?q=QZZXXWEE42&count=5',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_SSL_VERIFYPEER => false
 );
@@ -65,7 +65,11 @@ $tweets = [];
 foreach ($twitter_data->statuses as $tweet) {
     $formatDate = new Carbon($tweet->created_at);
     $formatDate->setTimezone('America/Chicago');
-    $tweets[] = ['summary' => $tweet->text, 'date' => $formatDate->format('n/j/y g:ia')];
+    $aWeekAgo = new Carbon();
+    // var_dump($aWeekAgo->setTimezone('America/Chicago')->subWeek(1));
+    if ($formatDate > $aWeekAgo->setTimezone('America/Chicago')->subWeek(1)) {
+        $tweets[] = ['summary' => $tweet->text, 'date' => $formatDate->format('n/j/y g:ia')];
+    }
 }
 
 echo json_encode($tweets);

@@ -31,13 +31,11 @@ if ($err) {
     echo "cURL Error #:" . $err;
 } else {
     $quoteData = json_decode($response);
-    var_dump($quoteData->contents->quotes[0]->quote);
-    var_dump($quoteData->contents->quotes[0]->author);
 }
 
 $quote = [
-    'quote' => $quoteData->result->quote,
-    'author' => $quoteData->result->author,
+    'quote' => $quoteData->contents->quotes[0]->quote,
+    'author' => $quoteData->contents->quotes[0]->author,
 ];
 
 echo json_encode($quote);
