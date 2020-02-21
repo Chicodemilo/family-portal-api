@@ -63,7 +63,7 @@ $service = new Google_Service_Calendar($client);
 date_default_timezone_set('America/Chicago');
 
 $optParams = array(
-    'maxResults' => 16,
+    'maxResults' => 17,
     'orderBy' => 'startTime',
     'singleEvents' => true,
     'timeMin' => date(
