@@ -2,6 +2,7 @@
 
 require __DIR__ . '/bootstrap.php';
 
+use Carbon\Carbon;
 // use Dotenv\Dotenv;
 
 // $httpStatus = 200;
@@ -30,11 +31,14 @@ curl_close($feed);
 $currentWeather = json_decode($json);
 
 foreach ($currentWeather->data as $weather) {
+    $formatSunset = new Carbon($weather->sunset);
+    $formatSunrise = new Carbon($weather->sunrise);
+
     $iconurl = "https://www.weatherbit.io/static/img/icons/" . $weather->weather->icon . ".png";
     $current = [
-        'sunset' => $weather->sunset,
+        'sunset' => $formatSunset->setTimezone('America/Chicago')->format('g:ia'),
         'precip' => $weather->precip,
-        'sunrise' => $weather->sunrise,
+        'sunrise' => $formatSunrise->setTimezone('America/Chicago')->format('g:ia'),
         'temp' => $weather->temp,
         'wind_spd' => $weather->wind_spd,
         'wind_cdir_full' => $weather->wind_cdir_full,
