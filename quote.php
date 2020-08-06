@@ -32,6 +32,8 @@ if ($err) {
 } else {
     $quoteData = json_decode($response);
 }
+var_dump($quoteData);
+die();
 
 $quote = [
     'quote' => $quoteData->contents->quotes[0]->quote,
