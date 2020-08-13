@@ -18,7 +18,7 @@ curl_setopt_array($curl, array(
     CURLOPT_POSTFIELDS => "",
     CURLOPT_COOKIE => "__cfduid=d8365eaec370c1c67d169886c31755ae21581879322",
     CURLOPT_HTTPHEADER => array(
-        "accept: application/json"
+        "accept: application/json",
     ),
 ));
 
@@ -32,12 +32,17 @@ if ($err) {
 } else {
     $quoteData = json_decode($response);
 }
-var_dump($quoteData);
-die();
 
-$quote = [
-    'quote' => $quoteData->contents->quotes[0]->quote,
-    'author' => $quoteData->contents->quotes[0]->author,
-];
+if (isset($quoteData->error)) {
+    $quote = [
+        'quote' => 'Everybody have fun tonight.',
+        'author' => 'Wang Chung',
+    ];
+} else {
+    $quote = [
+        'quote' => $quoteData->contents->quotes[0]->quote,
+        'author' => $quoteData->contents->quotes[0]->author,
+    ];
+}
 
 echo json_encode($quote);

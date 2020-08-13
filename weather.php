@@ -20,7 +20,7 @@ $options = array(
     CURLOPT_HEADER => false,
     CURLOPT_URL => $url,
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYPEER => false
+    CURLOPT_SSL_VERIFYPEER => false,
 );
 
 $feed = curl_init();
