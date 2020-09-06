@@ -36,9 +36,9 @@ foreach ($currentWeather->data as $weather) {
 
     $iconurl = "https://www.weatherbit.io/static/img/icons/" . $weather->weather->icon . ".png";
     $current = [
-        'sunset' => $formatSunset->subHours(6)->format('g:ia'),
+        'sunset' => $formatSunset->subHours(5)->format('g:ia'),
         'precip' => $weather->precip,
-        'sunrise' => $formatSunrise->subHours(6)->format('g:ia'),
+        'sunrise' => $formatSunrise->subHours(5)->format('g:ia'),
         'temp' => $weather->temp,
         'wind_spd' => $weather->wind_spd,
         'wind_cdir_full' => $weather->wind_cdir_full,

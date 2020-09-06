@@ -2,8 +2,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Dotenv\Dotenv;
 use Carbon\Carbon;
+use Dotenv\Dotenv;
 
 $httpStatus = 200;
 header('Access-Control-Allow-Origin: *');
@@ -24,3 +24,4 @@ $wBitKey = $_ENV['WEATHERBIT_KEY'];
 $calendarId = $_ENV['CALENDAR_ID'];
 $quoteId = $_ENV['QUOTE_ID'];
 $quoteToken = $_ENV['QUOTE_TOKEN'];
+$db_secret = $_ENV['DBPW'];
