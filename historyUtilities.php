@@ -43,7 +43,7 @@ class HistoryUtilities
         };
 
         $event = $this->data['data']['Events'][$eventNum];
-        $this->text .= $this->date . " " . $event['year'] . ": " . $event['text'] . "\n\n";
+        $this->text .= $this->date . " " . $event['year'] . ": " . $event['text'] . ":::";
     }
 
     private function pickBirth()
@@ -60,12 +60,12 @@ class HistoryUtilities
         };
 
         $birth = $this->data['data']['Births'][$birthNum1];
-        $birth2 = $this->data['data']['Births'][$birthNum2];
-        $birth3 = $this->data['data']['Births'][$birthNum3];
+        // $birth2 = $this->data['data']['Births'][$birthNum2];
+        // $birth3 = $this->data['data']['Births'][$birthNum3];
 
-        $this->text .= "Born Today  " . $birth['year'] . ": " . $birth['text'] . "\n";
-        $this->text .= "Born Today  " . $birth2['year'] . ": " . $birth2['text'] . "\n";
-        $this->text .= "Born Today  " . $birth3['year'] . ": " . $birth3['text'] . "\n\n";
+        $this->text .= "Born Today  " . $birth['year'] . ": " . $birth['text'] . ":::";
+        // $this->text .= "Born Today  " . $birth2['year'] . ": " . $birth2['text'] . ":::";
+        // $this->text .= "Born Today  " . $birth3['year'] . ": " . $birth3['text'] . ":::";
     }
 
     private function pickDeath()

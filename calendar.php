@@ -55,7 +55,6 @@ function getClient()
     return $client;
 }
 
-
 // Get the API client and construct the service object.
 $client = getClient();
 $service = new Google_Service_Calendar($client);
@@ -63,7 +62,7 @@ $service = new Google_Service_Calendar($client);
 date_default_timezone_set('America/Chicago');
 
 $optParams = array(
-    'maxResults' => 17,
+    'maxResults' => 15,
     'orderBy' => 'startTime',
     'singleEvents' => true,
     'timeMin' => date(

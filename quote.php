@@ -35,7 +35,7 @@ if ($err) {
 
 if (isset($quoteData->error)) {
     $quote = [
-        'quote' => 'Everybody have fun tonight.',
+        'quote' => 'Everybody have fun tonight',
         'author' => 'Wang Chung',
     ];
 } else {
