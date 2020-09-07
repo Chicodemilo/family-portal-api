@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
         <div class="col">&nbsp;</div>
         <div class="col-6">
             <div class="card">
-                <div class="card-header bigHead">🧙🏼‍♂️🏀🪐🧜🏼‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</br>
+                <div class="card-header bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</br>
                     HELLO <?php echo $name; ?>
                 </div>
                 <div class="card-body">
@@ -76,7 +76,7 @@ foreach ($options as $option) {
                     <hr>
                     <a href="logout.php">logout</a>
                 </div>
-                <div class="card-footer bigHead">🧙🏼‍♂️🏀🪐🧜🏼‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
+                <div class="card-footer bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
             </div>
         </div>
         <div class="col">&nbsp;</div>

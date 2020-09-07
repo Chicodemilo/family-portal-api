@@ -22,7 +22,7 @@ session_start();
         <div class="col">&nbsp;</div>
         <div class="col-6">
             <div class="card">
-                <div class="card-header bigHead">🧙🏼‍♂️🏀🪐🧜🏼‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
+                <div class="card-header bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
                 <div class="card-body">
                     <form action="login.php" method="POST">
                         <div class="form-group">
@@ -31,7 +31,7 @@ session_start();
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-                <div class="card-footer bigHead">🧙🏼‍♂️🏀🪐🧜🏼‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
+                <div class="card-footer bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
             </div>
 
         </div>
