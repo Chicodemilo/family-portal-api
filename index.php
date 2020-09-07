@@ -20,7 +20,7 @@ session_start();
 <body>
     <div class="row">
         <div class="col">&nbsp;</div>
-        <div class="col-6">
+        <div class="col-20">
             <div class="card">
                 <div class="card-header bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</div>
                 <div class="card-body">

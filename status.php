@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
 <body>
     <div class="row">
         <div class="col">&nbsp;</div>
-        <div class="col-6">
+        <div class="col-13">
             <div class="card">
                 <div class="card-header bigHead">🚀🐕🏀🏊‍♀️🍕🛠🍦🐶⛹🏼‍♀️🥑🤘🏻🎹🌳🌸🎺🏋🏼‍♀️🦐💜</br>
                     HELLO <?php echo $name; ?>
