@@ -42,7 +42,7 @@ class StatusUtilities
         $sql = "UPDATE users SET name=? WHERE id=?";
         $this->conn->prepare($sql)->execute([$data['name'], $data['id']]);
 
-        $now = $this->carbon->sub('5 hours')->format('j/n/y g:ia');
+        $now = $this->carbon->sub('2 hours')->format('j/n/y g:ia');
         $status = $data['status'];
         if ($data['optionStatus'] != '') {
             $status = $data['optionStatus'];
@@ -54,7 +54,7 @@ class StatusUtilities
 
     public function getCurrentStatus()
     {
-        $stmt = $this->conn->prepare("SELECT status FROM status WHERE user_id=? ORDER BY created_at DESC LIMIT 1");
+        $stmt = $this->conn->prepare("SELECT status FROM status WHERE user_id=? ORDER BY id DESC LIMIT 1");
         $stmt->execute([$_SESSION['id']]);
         $status = $stmt->fetch();
         if (!$status) {
