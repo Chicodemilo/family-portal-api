@@ -62,12 +62,12 @@ $service = new Google_Service_Calendar($client);
 date_default_timezone_set('America/Chicago');
 
 $optParams = array(
-    'maxResults' => 15,
+    'maxResults' => 13,
     'orderBy' => 'startTime',
     'singleEvents' => true,
     'timeMin' => date(
         'c',
-        strtotime("-20 hour")
+        strtotime("-12 hour")
     ),
 );
 $results = $service->events->listEvents($calendarId, $optParams);
