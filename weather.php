@@ -34,11 +34,17 @@ foreach ($currentWeather->data as $weather) {
     $formatSunset = new Carbon($weather->sunset);
     $formatSunrise = new Carbon($weather->sunrise);
 
+    if (date('I') == 0) {
+        $timeSub = 6;
+    } else {
+        $timeSub = 5;
+    }
+
     $iconurl = "https://www.weatherbit.io/static/img/icons/" . $weather->weather->icon . ".png";
     $current = [
-        'sunset' => $formatSunset->subHours(5)->format('g:ia'),
+        'sunset' => $formatSunset->subHours($timeSub)->format('g:ia'),
         'precip' => $weather->precip,
-        'sunrise' => $formatSunrise->subHours(5)->format('g:ia'),
+        'sunrise' => $formatSunrise->subHours($timeSub)->format('g:ia'),
         'temp' => $weather->temp,
         'wind_spd' => $weather->wind_spd,
         'wind_cdir_full' => $weather->wind_cdir_full,
