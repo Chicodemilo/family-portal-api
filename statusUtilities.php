@@ -42,7 +42,7 @@ class StatusUtilities
         $sql = "UPDATE users SET name=? WHERE id=?";
         $this->conn->prepare($sql)->execute([$data['name'], $data['id']]);
 
-        $now = $this->carbon->sub('0 hours')->format('j/n/y g:ia');
+        $now = $this->carbon->sub('0 hours')->format('n/j/y g:ia');
         $status = $data['status'];
         if ($data['optionStatus'] != '') {
             $status = $data['optionStatus'];
