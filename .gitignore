@@ -1,3 +1,8 @@
 #/vendor
 /.env
+/vendor
 /credentials.json
+./vendor/*
+vendor/
+./vendor
+./vendor/

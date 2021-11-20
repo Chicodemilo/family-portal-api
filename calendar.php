@@ -46,11 +46,12 @@ function getClient()
                 throw new Exception(join(', ', $accessToken));
             }
         }
+
         // Save the token to a file.
         if (!file_exists(dirname($tokenPath))) {
             mkdir(dirname($tokenPath), 0700, true);
         }
-        file_put_contents($tokenPath, json_encode($client->getAccessToken()));
+        $test = file_put_contents($tokenPath, json_encode($client->getAccessToken()));
     }
     return $client;
 }
@@ -70,6 +71,7 @@ $optParams = array(
         strtotime("-12 hour")
     ),
 );
+
 $results = $service->events->listEvents($calendarId, $optParams);
 $events = $results->getItems();
 
