@@ -82,6 +82,7 @@ $calendarEvents = [];
 
 if (empty($events)) {
     echo json_encode($calendarEvents);
+    //test
 } else {
 
     foreach ($events as $event) {
