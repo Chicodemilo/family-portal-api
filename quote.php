@@ -35,9 +35,9 @@ if ($err) {
 
 $rando = rand(1, 2);
 
-if (isset($quoteData->error) || $rando == 2) {
+if (isset($quoteData->error) || !isset($quoteData->contents->quotes[0]->quote) || $rando == 2) {
 
-    $pick = rand(1, 2);
+    $pick = rand(1, 6);
     $quote1 = [
         'quote' => 'I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. Twenty-six times I’ve been trusted to take the game-winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.',
         'author' => 'Michael Jordan',
@@ -47,12 +47,44 @@ if (isset($quoteData->error) || $rando == 2) {
         'author' => 'Venus Williams',
     ];
 
+    $quote3 = [
+        'quote' => 'Most people give up just when they’re about to achieve success. They quit on the one yard line. They give up at the last minute of the game one foot from a winning touchdown.',
+        'author' => 'Ross Perot',
+    ];
+
+    $quote4 = [
+        'quote' => 'I’ve learned that something constructive comes from every defeat.',
+        'author' => 'Tom Landry',
+    ];
+
+    $quote5 = [
+        'quote' => 'If you\'re going through hell, keep going.',
+        'author' => 'Winston Churchill',
+    ];
+
+    $quote6 = [
+        'quote' => 'You have enemies? Good. That means you\'ve stood up for something, sometime in your life.',
+        'author' => 'Winston Churchill',
+    ];
+
     switch ($pick) {
         case 1:
             $quote = $quote1;
             break;
         case 2:
             $quote = $quote2;
+            break;
+        case 3:
+            $quote = $quote3;
+            break;
+        case 4:
+            $quote = $quote4;
+            break;
+        case 5:
+            $quote = $quote5;
+            break;
+        case 6:
+            $quote = $quote6;
             break;
         default:
             $quote = $quote1;

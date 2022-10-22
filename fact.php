@@ -28,9 +28,41 @@ if ($err) {
 } else {
     $factData = json_decode($response);
 }
+$find = [
+    "sex",
+    "vagina",
+    "orgasm",
+    "penis",
+    "dildo",
+    "masterbation",
+    "masterbate",
+    "Sex",
+    "Vagina",
+    "Orgasm",
+    "Penis",
+    "Dildo",
+    "Masterbation",
+    "Masterbate",
+];
+$replace = [
+    "whoopie",
+    "hoo-hoo",
+    "bazinga",
+    "wee-wee",
+    "chachi",
+    "silly-time",
+    "wash the eggplant",
+    "Whoopie",
+    "Cha-Cha",
+    "Woo-Hoo",
+    "Bing-Bong",
+    "Meow",
+    "Bowling",
+    "Cook lasagna",
+];
 
 $fact = [
-    'fact' => $factData->text,
+    'fact' => str_replace($find, $replace, $factData->text),
 ];
 
 echo json_encode($fact);
