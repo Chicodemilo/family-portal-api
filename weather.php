@@ -29,18 +29,8 @@ $json = curl_exec($feed);
 curl_close($feed);
 
 $currentWeather = json_decode($json);
-$current = [
-    'sunset' => 'nope',
-    'precip' => 3,
-    'sunrise' => 'nope',
-    'temp' => 42,
-    'wind_spd' => 8,
-    'wind_cdir_full' => 'your butt',
-    'description' => 'full of tacos',
-    'icon' => '/family-portal-api/images/bug-solid.svg',
-];
 
-if ($currentWeather->error) {
+if (isset($currentWeather->error) || $currentWeather->null == null) {
     $current = [
         'sunset' => 'nope',
         'precip' => 3,

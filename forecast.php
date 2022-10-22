@@ -20,20 +20,30 @@ curl_close($feed);
 
 $currentWeather = json_decode($json);
 $forecastDays = [];
-
-foreach ($currentWeather->data as $dailyWeather) {
-    $dayString = new Carbon($dailyWeather->valid_date);
-
-    $daySmall = $dayString->format("D");
-
-    $iconurl = "https://www.weatherbit.io/static/img/icons/" . $dailyWeather->weather->icon . ".png";
+if (!isset($currentWeather->data)) {
     $forecastDays[] = [
-        'day' => $daySmall,
-        'high' => round($dailyWeather->high_temp, 0),
-        'low' => round($dailyWeather->min_temp, 0),
-        'description' => $dailyWeather->weather->description,
-        'icon' => $iconurl,
+        'day' => 'Flarg',
+        'high' => 42,
+        'low' => 42,
+        'description' => 'Tacos',
+        'icon' => '/family-portal-api/images/bug-solid.svg',
     ];
+} else {
+
+    foreach ($currentWeather->data as $dailyWeather) {
+        $dayString = new Carbon($dailyWeather->valid_date);
+
+        $daySmall = $dayString->format("D");
+
+        $iconurl = "https://www.weatherbit.io/static/img/icons/" . $dailyWeather->weather->icon . ".png";
+        $forecastDays[] = [
+            'day' => $daySmall,
+            'high' => round($dailyWeather->high_temp, 0),
+            'low' => round($dailyWeather->min_temp, 0),
+            'description' => $dailyWeather->weather->description,
+            'icon' => $iconurl,
+        ];
+    }
 }
 
 echo json_encode($forecastDays);
