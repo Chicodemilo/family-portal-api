@@ -30,7 +30,7 @@ curl_close($feed);
 
 $currentWeather = json_decode($json);
 
-if (isset($currentWeather->error) || $currentWeather->null == null) {
+if (isset($currentWeather->error) || $currentWeather->data == null) {
     $current = [
         'sunset' => 'nope',
         'precip' => 3,
